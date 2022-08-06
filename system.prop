@@ -1,0 +1,17 @@
+# Device release name
+ro.display.series=Samsung Galaxy A31
+
+# product/board stuff
+# https://browser.geekbench.com/v5/cpu/1359651
+ro.product.board=k68v1_64_titan
+ro.board.platform=mt6768
+
+# Disable Rescue Party
+persist.sys.disable_rescue=true
+
+# For developer info, use ADB to get its property
+sys.usb.controller=musb-hdrc
+
+# Dynamic partitions
+ro.boot.dynamic_partitions=true
+ro.boot.boot_devices=bootdevice,11230000.mmc
