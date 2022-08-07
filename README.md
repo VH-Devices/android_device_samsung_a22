@@ -1,9 +1,17 @@
 # TeamWin Recovery Project for Samsung Galaxy A31
 
-## Status
-- Nothing has been fully tested yet, so I can't confirm anything.
-- Tested only on Android 12 (OneUI 4.1, stock rom with Magisk).
-- Should work only on Android 12+.
+## Working
+- Booting
+- Flashing/format/fix/backup a partition
+- MTP/ADB
+- Fastboot
+- Micro-SD/OTG-USB
+- Vibration
+- Mounting (Don't mount partition like: EFS/NVRAM and IMEI related without need to avoid partition integrity issues)
+
+## Issues
+- Screenshot color issue (Wrong `TARGET_RECOVERY_PIXEL_FORMAT` variable set, I'm going fix that later)
+- Can't use deal with encryption/decryption
 
 ## Source
 - [Kernel](https://github.com/Hakalle/android_kernel_samsung_a31) by [Hakalle](https://github.com/Hakalle).
