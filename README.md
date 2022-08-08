@@ -10,7 +10,6 @@
 - Mounting (Don't mount partition like: EFS/NVRAM and IMEI related without need to avoid partition integrity issues)
 
 ## Issues
-- Screenshot color issue (Wrong `TARGET_RECOVERY_PIXEL_FORMAT` variable set, I'm going fix that later)
 - Can't use deal with encryption/decryption
 
 ## Source
