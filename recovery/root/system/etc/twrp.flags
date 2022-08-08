@@ -31,13 +31,16 @@
 
 # EFS/Modem/Non-volatile storage mount point
 /efs                ext4         /dev/block/by-name/efs               flags=backup=1;display="EFS"
-/sec_efs            ext4         /dev/block/by-name/sec_efs           flags=backup=1;subpartitionof=/efs;
-/modem              emmc         /dev/block/by-name/apnhlos           flags=backup=1;display="Modem";
-/mdm                emmc         /dev/block/by-name/modem             flags=backup=1;subpartitionof=/modem;
-/nvram              emmc         /dev/block/by-name/nvram             flags=backup=1;subpartitionof=/efs;
-/nvcfg              ext4         /dev/block/by-name/nvcfg             flags=backup=1;subpartitionof=/efs;
-/nvdata             ext4         /dev/block/by-name/nvdata            flags=backup=1;subpartitionof=/efs;
-/persistent         emmc         /dev/block/by-name/persistent        flags=backup=1;subpartitionof=/efs;
+/sec_efs            ext4         /dev/block/by-name/sec_efs           flags=backup=1;display="Sec EFS";subpartitionof=/efs
+/modem              emmc         /dev/block/by-name/apnhlos           flags=backup=1;display="NON-HLOS (Modem)"
+/mdm                emmc         /dev/block/by-name/modem             flags=backup=1;display="Modem";subpartitionof=/apnhlos
+/nvram              emmc         /dev/block/by-name/nvram             flags=backup=1;display="Non-volatile RAM";subpartitionof=/efs
+/nvcfg              ext4         /dev/block/by-name/nvcfg             flags=backup=1;display="Non-volatile Config";subpartitionof=/efs
+/nvdata             ext4         /dev/block/by-name/nvdata            flags=backup=1;display="Non-volatile Data";subpartitionof=/efs
+/persistent         emmc         /dev/block/by-name/persistent        flags=backup=1;display="Persistent";subpartitionof=/efs
+
+# Persist point
+/persist            ext4         /dev/block/by-name/persist           flags=backup=1;display="Persist"
 
 # SD Card & USB-OTG Points
 /external_sd        auto  /dev/block/mmcblk1p1     /dev/block/mmcblk1 flags=display="MicroSD Card";storage;wipeingui;removable
