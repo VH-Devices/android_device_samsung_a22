@@ -10,7 +10,7 @@
 - Mounting (Don't mount partition like: EFS/NVRAM and IMEI related without need to avoid partition integrity issues)
 
 ## Issues
-- Can't use deal with encryption/decryption
+- Can't deal with encryption/decryption
 
 ## Source
 - [Kernel](https://github.com/Hakalle/android_kernel_samsung_a31) by [Hakalle](https://github.com/Hakalle).
