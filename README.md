@@ -1,4 +1,4 @@
-# TeamWin Recovery Project for Samsung Galaxy A31
+# TeamWin Recovery Project for Samsung Galaxy A22
 
 ## Working
 - Booting
