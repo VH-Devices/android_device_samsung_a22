@@ -25,6 +25,6 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-ifeq ($(TARGET_DEVICE), a31)
+ifeq ($(TARGET_DEVICE), a22)
 include $(call all-subdir-makefiles,$(call my-dir))
 endif

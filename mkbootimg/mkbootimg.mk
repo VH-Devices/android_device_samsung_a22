@@ -27,7 +27,7 @@
 
 # TODO: Use mkbootimg from AOSP.
 
-MKBOOTIMG := device/samsung/a31/mkbootimg/mkbootimg
+MKBOOTIMG := device/samsung/a22/mkbootimg/mkbootimg
 
 FLASH_IMAGE_TARGET ?= $(PRODUCT_OUT)/recovery.tar
 

@@ -25,7 +25,7 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-DEVICE_PATH := device/samsung/a31
+DEVICE_PATH := device/samsung/a22
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := false
@@ -56,7 +56,7 @@ ENABLE_SCHEDBOOST := true
 TARGET_USES_UEFI := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := a31,a31nsdx
+TARGET_OTA_ASSERT_DEVICE := a22
 
 # File systems
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -80,7 +80,7 @@ BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.selinux=permissive
 BOARD_BOOT_HEADER_VERSION := 2
 
 # Kernel: Board (kernel...) flags
-BOARD_NAME                 := SRPTA24B001
+BOARD_NAME                 := SRPTK17B001
 BOARD_KERNEL_BASE          := 0x40078000
 BOARD_KERNEL_PAGESIZE      := 2048
 BOARD_KERNEL_OFFSET        := 0x00008000

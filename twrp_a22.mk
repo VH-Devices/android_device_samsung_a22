@@ -46,8 +46,8 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := a31
-PRODUCT_NAME := twrp_a31
+PRODUCT_DEVICE := a22
+PRODUCT_NAME := twrp_a22
 PRODUCT_BRAND := Samsung
-PRODUCT_MODEL := Samsung Galaxy A31
+PRODUCT_MODEL := Samsung Galaxy A22
 PRODUCT_MANUFACTURER := Samsung

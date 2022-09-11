@@ -25,5 +25,5 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/twrp_a31.mk
-COMMON_LUNCH_CHOICES := twrp_a31-eng
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/twrp_a22.mk
+COMMON_LUNCH_CHOICES := twrp_a22-eng
